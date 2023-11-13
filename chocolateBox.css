@@ -92,6 +92,6 @@ div {
     }
 
     100%{
-        transform: translateX(-330px) rotate(-10deg);
+        transform: translateX(-320px) rotate(-10deg);
     }
 }
