@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/*comment lol*/
+
+body {
+    background-color: rgb(198, 253, 206);
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    font-size: 60px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    margin-top: 30vh;
+}
+
+#choc1-1, #choc1-2, #choc1-3, #choc2-1, #choc2-2, #choc2-3, #choc3-1, #choc3-2, #choc3-3 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+#choc1-1 {
+    margin-right: 14px;
+    margin-top: 27px;
+}
+
+#choc1-2 {
+    margin-right: 148px;
+    margin-top: 27px;
+}
+
+#choc1-3 {
+    margin-left: 119px;
+    margin-top: 27px;
+}
+
+#choc2-1 {
+    margin-right: 14px;
+    margin-top: 160px;
+}
+
+#choc2-2 {
+    margin-right: 148px;
+    margin-top: 160px;
+}
+
+#choc2-3 {
+    margin-left: 119px;
+    margin-top: 160px;
+}
+
+#choc3-1 {
+    margin-right: 14px;
+    margin-top: 93px;
+}
+
+#choc3-2 {
+    margin-right: 148px;
+    margin-top: 93px;
+}
+
+#choc3-3 {
+    margin-left: 119px;
+    margin-top: 93px;
+}
+
+#box {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+}
+
+#box-lid {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    /*visibility: hidden;*/
+}
+
+#box-lid:hover{
+    animation-name: open-box;
+    animation-duration: 2.5s;
+    animation-delay: 0.1s;
+}
+
+@keyframes open-box{
+    0%{
+        transform: translateX(0px) rotate(0deg);
+    }
+
+    100%{
+        transform: translateX(-330px) rotate(-10deg);
+    }
+}
