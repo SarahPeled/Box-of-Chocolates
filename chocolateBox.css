@@ -80,11 +80,12 @@ div {
     /*visibility: hidden;*/
 }
 
-#box-lid:hover{
+/* #box-lid:hover{
     animation-name: open-box;
     animation-duration: 2.5s;
     animation-delay: 0.1s;
-}
+    animation-fill-mode: forwards;
+} */
 
 @keyframes open-box{
     0%{
