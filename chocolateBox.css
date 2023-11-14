@@ -98,3 +98,33 @@ div {
         transform: translateX(-425px) rotate(-10deg);
     }
 }
+
+#flavors {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 30px;
+    /* border: 2px solid blue; */
+    margin-top: 0px;
+    margin-left: 1000px;
+}
+
+#saltedCaramel {
+    /* border: 2px solid red; */
+    margin-top: 50px;
+    visibility: hidden;
+}
+
+#strawberryLiquorice {
+    /* border: 2px solid red; */
+    margin-top: 55px;
+    visibility: hidden;
+}
+
+#whiteCoconut {
+    /* border: 2px solid red; */
+    margin-top: 60px;
+    margin-bottom: 50px;
+    visibility: hidden
+}  

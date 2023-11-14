@@ -43,3 +43,100 @@ function triggerAnimation() {
 
 // Add the mouseover event listener to the box lid
 boxLid.addEventListener('mouseover', triggerAnimation);
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Select all elements with the class 'piece'
+    var pieces = document.querySelectorAll('.piece');
+
+    // Add a mouseenter event listener to each piece
+    pieces.forEach(function(piece) {
+        piece.addEventListener('mouseenter', function() {
+            // Check if the piece has the class 'green'
+            if (piece.classList.contains('green')) {
+                // Find the element with id 'saltedCaramel' and change its visibility
+                var saltedCaramel = document.getElementById('saltedCaramel');
+                saltedCaramel.style.visibility = 'visible';
+                if (piece.id === 'choc1-1') {
+                    piece.style.transition = 'transform 0.3s';
+                    piece.style.transform = 'rotate(-60deg)';
+                } else if (piece.id === 'choc1-2') {
+                    piece.style.transition = 'transform 0.3s';
+                    piece.style.transform = 'rotate(-60deg)';
+                } else if (piece.id === 'choc1-3') {
+                    piece.style.transition = 'transform 0.3s';
+                    piece.style.transform = 'rotate(-60deg)';
+                }
+            }
+            else if (piece.classList.contains('red')) {
+                var strawberryLiquorice = document.getElementById('strawberryLiquorice');
+                strawberryLiquorice.style.visibility = 'visible';
+                if (piece.id === 'choc3-1') {
+                    piece.style.transition = 'transform 0.3s';
+                    piece.style.transform = 'rotate(-60deg)';
+                } else if (piece.id === 'choc3-2') {
+                    piece.style.transition = 'transform 0.3s';
+                    piece.style.transform = 'rotate(-60deg)';
+                } else if (piece.id === 'choc3-3') {
+                    piece.style.transition = 'transform 0.3s';
+                    piece.style.transform = 'rotate(-60deg)';
+                }
+            }
+            else if (piece.classList.contains('silver')) {
+                var whiteCoconut = document.getElementById('whiteCoconut');
+                whiteCoconut.style.visibility = 'visible';
+                if (piece.id === 'choc2-1') {
+                    piece.style.transition = 'transform 0.3s';
+                    piece.style.transform = 'rotate(-60deg)';
+                } else if (piece.id === 'choc2-2') {
+                    piece.style.transition = 'transform 0.3s';
+                    piece.style.transform = 'rotate(-60deg)';
+                } else if (piece.id === 'choc2-3') {
+                    piece.style.transition = 'transform 0.3s';
+                    piece.style.transform = 'rotate(-60deg)';
+                }
+            }
+        });
+        piece.addEventListener('mouseout', function() {
+            // Check if the piece has the class 'green'
+            if (piece.classList.contains('green')) {
+                // Find the element with id 'saltedCaramel' and change its visibility
+                var saltedCaramel = document.getElementById('saltedCaramel');
+                saltedCaramel.style.visibility = 'hidden';
+                if (piece.id === 'choc1-1') {
+                    piece.style.transform = 'rotate(0deg)';
+                } else if (piece.id === 'choc1-2') {
+                    piece.style.transform = 'rotate(0deg)';
+                } else if (piece.id === 'choc1-3') {
+                    piece.style.transform = 'rotate(0deg)';
+                }
+            }
+            else if (piece.classList.contains('red')) {
+                var strawberryLiquorice = document.getElementById('strawberryLiquorice');
+                strawberryLiquorice.style.visibility = 'hidden';
+                if (piece.id === 'choc3-1') {
+                    piece.style.transform = 'rotate(0deg)';
+                } else if (piece.id === 'choc3-2') {
+                    piece.style.transform = 'rotate(0deg)';
+                } else if (piece.id === 'choc3-3') {
+                    piece.style.transform = 'rotate(0deg)';
+                }
+            }
+            else if (piece.classList.contains('silver')) {
+                var whiteCoconut = document.getElementById('whiteCoconut');
+                whiteCoconut.style.visibility = 'hidden';
+                if (piece.id === 'choc2-1') {
+                    piece.style.transform = 'rotate(0deg)';
+                } else if (piece.id === 'choc2-2') {
+                    piece.style.transform = 'rotate(0deg)';
+                } else if (piece.id === 'choc2-3') {
+                    piece.style.transform = 'rotate(0deg)';
+                }
+            }
+        });
+    });
+});
+
+
+
